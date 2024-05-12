@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinity Map Game</title>
+<link rel="stylesheet" href="styles/styles2.css">
+<script src="js/main.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <img class="title" src="img/title.png" alt="Название Игры">
+    <button class="button" onclick="location.href='game.html'">Играть</button>
+    <button class="button" onclick="togglePopup()">Как играть</button>
+  </div>
+
+  <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()"></div>
+  <div id="popup-content" class="popup-content">
+    <span class="close-btn" onclick="togglePopup()">&times;</span>
+    <h1>Как играть</h1>
+    <p>Всё что вы можете делать это смотреть на бесконечную карту и лутать башни</p>
+	<p><img src="maps/map3.png"></p>
+	<p>Это обычная башня, шанс её спавна равен: 0.0002%.</p>
+	<p>С неё может выпасть:</p>
+	<p>Каменный меч 0.05%</p>
+	<p>Морковь</p>
+	<p></p>
+	<p></p>
+  </div>
+
+</body>
+</html>

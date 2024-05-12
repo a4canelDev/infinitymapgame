@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+.title {
+  width: 200px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.menu img {
+    max-width: 100%;
+    height: auto;
+}
+.button {
+    background: #1f80b1;
+    background-size: cover;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+  .popup-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    z-index: 20;
+  }
+  .close-btn {
+    float: right;
+    cursor: pointer;
+  }
